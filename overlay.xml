@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="stable" status="unofficial">
+		<name><![CDATA[openomf]]></name>
+		<description lang="en"><![CDATA[OpenOMF packages]]></description>
+		<homepage>https://github.com/omf2097/openomf-overlay</homepage>
+		<owner type="person">
+			<email>katajakasa@gmail.com</email>
+			<name><![CDATA[Katajakasa]]></name>
+		</owner>
+		<source type="git">https://github.com/omf2097/openomf-overlay.git</source>
+	</repo>
+</repositories>
