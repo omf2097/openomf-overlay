@@ -13,20 +13,18 @@ EGIT_REPO_URI="https://github.com/omf2097/libShadowDive.git"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+dumb -modplug"
+IUSE=""
 
-RDEPEND="dumb? ( >=media-libs/dumb-9999 )
-	 modplug? ( media-libs/libmodplug )"
+RDEPEND=""
 DEPEND="${RDEPEND}"
-REQUIRED_USE="dumb? ( !modplug )"
+REQUIRED_USE=""
 
 CMAKE_BUILD_TYPE="Release"
 CMAKE_VERBOSE=OFF
 
 src_configure() {
 	local mycmakeargs=(
-        "-DBUILD_SHARED_LIBS:BOOL=ON"
-        $(cmake-utils_use modplug USE_MODPLUG)
-    )
+	"-DBUILD_SHARED_LIBS:BOOL=ON"
+	)
 	cmake-utils_src_configure
 }
