@@ -18,7 +18,7 @@ IUSE="+dumb -modplug +openal +png vorbis"
 RDEPEND="dumb? ( media-libs/dumb )
          modplug? ( media-libs/libmodplug )
          openal? ( media-libs/openal )
-         >=media-libs/libsdl2-2.0.1
+         >=media-libs/libsdl2-2.0.3
          games-misc/libshadowdive
          dev-libs/confuse
          net-libs/enet
