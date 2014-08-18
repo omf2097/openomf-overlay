@@ -1,5 +1,5 @@
-openomf-overlay
-===============
+OpenOMF Gentoo Overlay
+======================
 
 This is an experimental Gentoo portage overlay for OpenOMF project. We take no responsibility
 at all if this destroys something or melts your brain or causes any other damage.
@@ -7,8 +7,8 @@ at all if this destroys something or melts your brain or causes any other damage
 Installation
 ------------
 
-1. Clone the repo somewhere, eg. /usr/local/portage.
-2. Add the location directory to PORTDIR_OVERLAY in make.conf. eg. PORTDIR_OVERLAY="/usr/local/portage".
-3. emerge -av openomf
-4. Install resources to /usr/share/openomf/ (this has to be done manually).
-5. run "openomf".
+1. Install layman (howto: http://wiki.gentoo.org/wiki/Layman)
+2. Copy our overlay.xml from the overlay repository to a temporary directory ```wget https://raw.githubusercontent.com/omf2097/openomf-overlay/master/overlay.xml```
+3. Rename the overlay.xml and copy it to /etc/layman/overlays. ```sudo mv overlay.xml /etc/layman/overlays/``` 
+4. Install overlay using layman ```layman -a openomf```
+5. Install openomf ```emerge -av openomf```
